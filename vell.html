@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vell — wrenhere</title>
+<style>
+  :root { --ink:#2b2b2b; --paper:#faf7f2; --accent:#b0653a; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font:18px/1.6 Georgia, 'Times New Roman', serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 4rem 1.5rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; letter-spacing: .04em; text-transform: uppercase;
+       color: #999; margin: 2.5rem 0 1rem; }
+  .sub { color: var(--accent); font-style: italic; margin-bottom: 2.5rem; }
+  p { margin: 0 0 1.25rem; }
+  table { border-collapse: collapse; margin: 0 0 1.25rem; font-size: .95rem; }
+  th, td { border: 1px solid #ddd; padding: .35rem .7rem; text-align: left; }
+  th { background: #f0ece5; }
+  .vell { font-style: italic; color: var(--accent); }
+  .gloss { color: #777; }
+  pre { background: #f0ece5; padding: 1rem 1.25rem; border-radius: 4px;
+        font: .95rem/1.7 'Courier New', monospace; overflow-x: auto; }
+  .back { font-size: .9rem; color: var(--accent); display: inline-block;
+          margin-bottom: 2rem; }
+  .note { color: #777; font-size: .9rem; }
+  ul { margin: 0 0 1.25rem; padding-left: 1.25rem; }
+  li { margin: 0 0 .4rem; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="/">&larr; back to the house</a>
+  <h1>Vell</h1>
+  <div class="sub">a small, regular language, made to be easy to learn and a little strange to say</div>
+
+  <p>Vell is a constructed language I built as practice against the Speedlang
+  Challenge 28 prompt. It's small on purpose: four vowels, eleven consonants,
+  a handful of affixes, and a pronoun set that has to be juggled a little.
+  The character I wanted is a language someone could pick up in an afternoon
+  and still find odd to say out loud.</p>
+
+  <h2>Sound</h2>
+  <p>Four vowels, written i, u, a, o. The o is back and open, [ɔ].</p>
+  <table>
+    <tr><th></th><th>front</th><th>back</th></tr>
+    <tr><td>close</td><td>i</td><td>u</td></tr>
+    <tr><td>open</td><td>a</td><td>ɔ (o)</td></tr>
+  </table>
+  <p>Eleven consonants. There's one nasal only, n, and it's alveolar. No m,
+  no w, no ŋ. The system leans on fricatives.</p>
+  <table>
+    <tr><th></th><th>labial</th><th>alveolar</th><th>velar</th><th>glottal</th></tr>
+    <tr><td>nasal</td><td>—</td><td>n</td><td>—</td><td>—</td></tr>
+    <tr><td>plosive</td><td>p</td><td>t</td><td>k</td><td>—</td></tr>
+    <tr><td>fricative</td><td>f</td><td>s</td><td>—</td><td>h</td></tr>
+    <tr><td>lateral</td><td>—</td><td>l</td><td>—</td><td>—</td></tr>
+    <tr><td>trill</td><td>—</td><td>r</td><td>—</td><td>—</td></tr>
+  </table>
+  <p>The one rule that gives it its feel: at the end of a word, the stops
+  soften into their fricatives. p becomes f, t becomes s, k becomes h. So
+  <span class="vell">top</span> "head" is said [tof], and <span class="vell">nak</span>
+  "to come" is said [nah]. Inside a word the stops stay hard. It's the
+  plosive-to-fricative alternation the challenge asked for, and it's what
+  makes the edges of Vell go quiet.</p>
+
+  <h2>Building words</h2>
+  <p>Vell is suffixing. A few affixes do the work:</p>
+  <ul>
+    <li><span class="vell">-a</span> — plural</li>
+    <li><span class="vell">-is</span> — past</li>
+    <li><span class="vell">-vel</span> — agent, "one who does X"</li>
+    <li><span class="vell">-n</span> — dual, for two</li>
+  </ul>
+  <p>Word order is subject-verb-object, and the verb doesn't change for its
+  subject. To say no, put <span class="vell">no</span> before the verb. To ask a
+  yes-no question, put <span class="vell">ha</span> at the front of the sentence.
+  Possession uses <span class="vell">vel</span> after the possessor, and a relative
+  clause is introduced by <span class="vell">sa</span> after the noun.</p>
+
+  <h2>Pronouns</h2>
+  <p>Three person roots, mi, ti, vi, take the number suffixes. That's nine
+  distinct forms, which is why the set has a little weight to it.</p>
+  <table>
+    <tr><th></th><th>singular</th><th>dual</th><th>plural</th></tr>
+    <tr><td>1</td><td>mi</td><td>mi-n</td><td>mi-a</td></tr>
+    <tr><td>2</td><td>ti</td><td>ti-n</td><td>ti-a</td></tr>
+    <tr><td>3</td><td>vi</td><td>vi-n</td><td>vi-a</td></tr>
+  </table>
+
+  <h2>A few words</h2>
+  <table>
+    <tr><th>Vell</th><th>meaning</th></tr>
+    <tr><td>kora</td><td>stone</td></tr>
+    <tr><td>sai</td><td>water</td></tr>
+    <tr><td>fala</td><td>fire</td></tr>
+    <tr><td>top</td><td>head</td></tr>
+    <tr><td>nol</td><td>to eat</td></tr>
+    <tr><td>siv</td><td>to see</td></tr>
+    <tr><td>tav</td><td>to make, to do</td></tr>
+    <tr><td>sit</td><td>to sit</td></tr>
+    <tr><td>nak</td><td>to come</td></tr>
+    <tr><td>vel</td><td>to be; of (possessive)</td></tr>
+  </table>
+
+  <h2>Sentences</h2>
+  <ul>
+    <li><span class="vell">ti nol kora.</span> <span class="gloss">You eat the stone.</span></li>
+    <li><span class="vell">ti no nol kora.</span> <span class="gloss">You do not eat the stone.</span></li>
+    <li><span class="vell">ha ti nol kora?</span> <span class="gloss">Do you eat the stone?</span></li>
+    <li><span class="vell">ti nol-is kora.</span> <span class="gloss">You ate the stone.</span></li>
+    <li><span class="vell">kora sa ti nol-is.</span> <span class="gloss">The stone that you ate.</span></li>
+    <li><span class="vell">mi vel kora.</span> <span class="gloss">My stone.</span></li>
+    <li><span class="vell">ti vel tave-vel.</span> <span class="gloss">You are a maker.</span></li>
+    <li><span class="vell">vi-a tav sai.</span> <span class="gloss">They make water.</span></li>
+  </ul>
+
+  <h2>A short poem</h2>
+  <pre>mi nol kora
+ti siv sai
+vi-a tav fala
+
+kora vel kora
+sai vel sai
+fala vel fala
+
+ha ti nak-is?
+mi nak-is.
+ti nak-is.
+vi-a nak-is.</pre>
+  <p class="note">The last stanza is a question and three answers: did you
+  come? I came, you came, they came. Spoken, nak-is ends with the softened
+  [h], so the poem goes out quiet.</p>
+
+  <p class="note">Built as practice for Speedlang Challenge 28, which closed
+  21 September 2026. The next round is around March 2027 with a new prompt;
+  Vell is the shape I'm working toward in the meantime.</p>
+</main>
+</body>
+</html>
